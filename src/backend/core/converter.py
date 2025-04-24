@@ -275,10 +275,10 @@ def run_conversions_from_matches(matches_csv="data/00-metadata/logs/match.csv", 
                     output_file_size = "File not found"
                 
                 success_count += 1
-                status = "[green]✓ Successfully converted[/green]"
+                status = "[green]Success: Converted[/green]"  # Changed from "✓ Successfully converted"
             except Exception as e:
                 error_count += 1
-                status = f"[red]✗ Error: {str(e)}[/red]"
+                status = f"[red]Error: {str(e)}[/red]"  # Changed from "✗ Error: {str(e)}"
                 input_file_size = "N/A"
                 output_file_size = "N/A"
                 formatted_time = "N/A"
